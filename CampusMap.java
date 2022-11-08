@@ -19,6 +19,7 @@ public class CampusMap {
         System.out.println("-->Successfully added " + b.getName() + " to the map.");
     }
 
+
     /**
      * Removes a Building from the map
      * @param b the Building to remove
@@ -44,6 +45,14 @@ public class CampusMap {
         CampusMap myMap = new CampusMap();
         myMap.addBuilding(new Building("Ford Hall", "100 Green Street Northampton, MA 01063", 4));
         myMap.addBuilding(new Building("Bass Hall", "4 Tyler Court Northampton, MA 01063", 4));
+        myMap.addBuilding(new Library("Neilson Library", "7 Neilson Drive", 4, null, true));
+        myMap.addBuilding(new Library("Hillyer Art Library", "20 Elm St Northampton, MA 01063", 2, null, true));
+        myMap.addBuilding(new Cafe("Campus Center Cafe", "1 Chapin Way Northampton, MA 01063", 1));
+        myMap.addBuilding(new Cafe("Compass Cafe", "7 Neilson Drive, Northampton, MA 01063", 1));
+        myMap.addBuilding(new House("Cushing House", "10 Elm St, Northampton, MA 01063", 4, null, true, false));
+        myMap.addBuilding(new House("Comstock House", "1 Mandelle Rd, Northampton, MA 01063", 4, null, true, true));
+        myMap.addBuilding(new House("Emerson House", "10 Elm St, Northampton, MA 01063", 4, null, true, false));
+        myMap.addBuilding(new Building("Seelye", "1 Chapin Way Northampton, MA 01063", 4));
         System.out.println(myMap);
     }
     
